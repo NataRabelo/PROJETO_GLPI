@@ -26,8 +26,10 @@ def create_app():
     login_manager.login_view = "auth_bp.login"
     bcrypt.init_app(app)
 
-    from app.routes.main import auth_bp
+    from app.routes.auth import auth_bp
+    from app.routes.ticket import ticket_bp
 
     app.register_blueprint(auth_bp)
+    app.register_blueprint(ticket_bp)
 
     return app
