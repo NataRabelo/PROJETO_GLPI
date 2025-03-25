@@ -1,0 +1,12 @@
+# Ambiente virtual
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Configurações e chaves secretas
+.env
+
+# Logs e arquivos temporários
+*.log
+instance/
